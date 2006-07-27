@@ -1,0 +1,7 @@
+category: Libs
+requires: cygwin
+external-source: libieee1284
+sdesc: "Parallel port device library (runtime)"
+ldesc: "This library is intended to be used by applications that need to
+communicate with (or at least identify) devices that are attached via a
+parallel port."

@@ -1,0 +1,123 @@
+libieee1284
+------------------------------------------
+This library is intended to be used by applications that need to
+communicate with (or at least identify) devices that are attached via a
+parallel port.
+
+Runtime requirements:
+  cygwin-1.5.21-1
+  python-2.4.3-1  (for the python bindings)
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.21-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.4-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.81-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://cyberelk.net/tim/libieee1284/
+
+Canonical download:
+  http://cyberelk.net/tim/data/libieee1284/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libieee1284-0.2.10-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libieee1284-0.2.10-X.cygport all
+
+This will create:
+  /usr/src/libieee1284-0.2.10-X-src.tar.bz2
+  /usr/src/libieee1284-0.2.10-X.tar.bz2
+  /usr/src/libieee1284-doc-0.2.10-X.tar.bz2
+  /usr/src/libieee1284_3-0.2.10-X.tar.bz2
+  /usr/src/pyieee1284-0.2.10-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/libieee1284_test.exe
+  /usr/include/ieee1284.h
+  /usr/lib/libieee1284.dll.a
+  /usr/lib/libieee1284.la
+  /usr/share/doc/Cygwin/libieee1284-0.2.10.README
+  /usr/share/doc/libieee1284-0.2.10/AUTHORS
+  /usr/share/doc/libieee1284-0.2.10/COPYING
+  /usr/share/doc/libieee1284-0.2.10/ChangeLog
+  /usr/share/doc/libieee1284-0.2.10/INSTALL
+  /usr/share/doc/libieee1284-0.2.10/NEWS
+  /usr/share/doc/libieee1284-0.2.10/README
+  /usr/share/doc/libieee1284-0.2.10/TODO
+
+Files included in the runtime library package:
+
+  /usr/bin/cygieee1284-3.dll
+
+Files included in the python bindings package:
+
+  /usr/lib/python2.4/site-packages/ieee1284module.dll
+  /usr/lib/python2.4/site-packages/ieee1284module.la
+
+Files included in the documentation package:
+
+  /usr/share/man/man3/ieee1284_byte_read.3.gz
+  /usr/share/man/man3/ieee1284_claim.3.gz
+  /usr/share/man/man3/ieee1284_close.3.gz
+  /usr/share/man/man3/ieee1284_compat_write.3.gz
+  /usr/share/man/man3/ieee1284_data_dir.3.gz
+  /usr/share/man/man3/ieee1284_do_nack_handshake.3.gz
+  /usr/share/man/man3/ieee1284_ecp_fwd_to_rev.3.gz
+  /usr/share/man/man3/ieee1284_ecp_read_addr.3.gz
+  /usr/share/man/man3/ieee1284_ecp_read_data.3.gz
+  /usr/share/man/man3/ieee1284_ecp_rev_to_fwd.3.gz
+  /usr/share/man/man3/ieee1284_ecp_write_addr.3.gz
+  /usr/share/man/man3/ieee1284_ecp_write_data.3.gz
+  /usr/share/man/man3/ieee1284_epp_read_addr.3.gz
+  /usr/share/man/man3/ieee1284_epp_read_data.3.gz
+  /usr/share/man/man3/ieee1284_epp_write_addr.3.gz
+  /usr/share/man/man3/ieee1284_epp_write_data.3.gz
+  /usr/share/man/man3/ieee1284_find_ports.3.gz
+  /usr/share/man/man3/ieee1284_free_ports.3.gz
+  /usr/share/man/man3/ieee1284_frob_control.3.gz
+  /usr/share/man/man3/ieee1284_get_deviceid.3.gz
+  /usr/share/man/man3/ieee1284_get_irq_fd.3.gz
+  /usr/share/man/man3/ieee1284_negotiate.3.gz
+  /usr/share/man/man3/ieee1284_nibble_read.3.gz
+  /usr/share/man/man3/ieee1284_open.3.gz
+  /usr/share/man/man3/ieee1284_read_control.3.gz
+  /usr/share/man/man3/ieee1284_read_data.3.gz
+  /usr/share/man/man3/ieee1284_read_status.3.gz
+  /usr/share/man/man3/ieee1284_ref.3.gz
+  /usr/share/man/man3/ieee1284_release.3.gz
+  /usr/share/man/man3/ieee1284_set_timeout.3.gz
+  /usr/share/man/man3/ieee1284_terminate.3.gz
+  /usr/share/man/man3/ieee1284_unref.3.gz
+  /usr/share/man/man3/ieee1284_wait_data.3.gz
+  /usr/share/man/man3/ieee1284_wait_status.3.gz
+  /usr/share/man/man3/ieee1284_write_control.3.gz
+  /usr/share/man/man3/ieee1284_write_data.3.gz
+  /usr/share/man/man3/libieee1284.3.gz
+  /usr/share/man/man3/parport.3.gz
+  /usr/share/man/man3/parport_list.3.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.2.10-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
