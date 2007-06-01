@@ -5,21 +5,21 @@ communicate with (or at least identify) devices that are attached via a
 parallel port.
 
 Runtime requirements:
-  cygwin-1.5.21-1
-  python-2.4.3-1  (for the python bindings)
+  cygwin-1.5.24-2
+  python-2.5.1-1  (for the python bindings)
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-1
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.4-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
-  sed-4.1.5-1
+  sed-4.1.5-2
 
 Canonical website:
   http://cyberelk.net/tim/libieee1284/
@@ -39,16 +39,17 @@ Build instructions:
 This will create:
   /usr/src/libieee1284-0.2.10-X-src.tar.bz2
   /usr/src/libieee1284-0.2.10-X.tar.bz2
-  /usr/src/libieee1284-doc-0.2.10-X.tar.bz2
   /usr/src/libieee1284_3-0.2.10-X.tar.bz2
-  /usr/src/pyieee1284-0.2.10-X.tar.bz2
+  /usr/src/python-ieee1284-0.2.10-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(libieee1284)
   /usr/bin/libieee1284_test.exe
   /usr/include/ieee1284.h
+  /usr/lib/libieee1284.a
   /usr/lib/libieee1284.dll.a
   /usr/lib/libieee1284.la
   /usr/share/doc/Cygwin/libieee1284-0.2.10.README
@@ -59,18 +60,6 @@ Files included in the binary package:
   /usr/share/doc/libieee1284-0.2.10/NEWS
   /usr/share/doc/libieee1284-0.2.10/README
   /usr/share/doc/libieee1284-0.2.10/TODO
-
-Files included in the runtime library package:
-
-  /usr/bin/cygieee1284-3.dll
-
-Files included in the python bindings package:
-
-  /usr/lib/python2.4/site-packages/ieee1284module.dll
-  /usr/lib/python2.4/site-packages/ieee1284module.la
-
-Files included in the documentation package:
-
   /usr/share/man/man3/ieee1284_byte_read.3.gz
   /usr/share/man/man3/ieee1284_claim.3.gz
   /usr/share/man/man3/ieee1284_close.3.gz
@@ -111,9 +100,20 @@ Files included in the documentation package:
   /usr/share/man/man3/parport.3.gz
   /usr/share/man/man3/parport_list.3.gz
 
+(libieee1284_3)
+  /usr/bin/cygieee1284-3.dll
+
+(python-ieee1284)
+  /usr/lib/python2.4/site-packages/ieee1284module.dll
+  /usr/lib/python2.4/site-packages/ieee1284module.la
+
 ------------------
 
 Port Notes:
+
+----- version 0.2.10-2 -----
+Rebuilt for python-2.5.
+Merged manpages into main package.
 
 ----- version 0.2.10-1 -----
 Initial release for Cygwin.

@@ -1,0 +1,13 @@
+inherit python
+
+DESCRIPTION="Parallel port device library"
+HOMEPAGE="http://cyberelk.net/tim/libieee1284/"
+SRC_URI="http://cyberelk.net/tim/data/${PN}/stable/${P}.tar.bz2"
+
+CYGCONF_ARGS="--with-python"
+
+PKG_NAMES="${PN} ${PN}_3 python-ieee1284"
+PKG_HINTS='setup runtime python'
+PKG_CONTENTS[0]='usr/bin/*.exe usr/include/ usr/lib/lib* usr/share/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]="${PYTHON_SITELIB#/}"
