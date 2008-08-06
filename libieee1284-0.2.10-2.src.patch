@@ -1,4 +1,3 @@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x 'Makefile.in*' -x configure -x gnome-doc-utils.make -x intltool.m4 -x omf.make -x xmldocs.make origsrc/libieee1284-0.2.10/Makefile.am src/libieee1284-0.2.10/Makefile.am
 --- origsrc/libieee1284-0.2.10/Makefile.am	2005-01-21 08:33:54.000000000 -0600
 +++ src/libieee1284-0.2.10/Makefile.am	2006-07-26 18:09:45.324250000 -0500
 @@ -9,6 +9,7 @@
