@@ -1,5 +1,5 @@
 category: Python
-requires: cygwin python libieee1284_3
+requires: python libieee1284_3
 external-source: libieee1284
 sdesc: "Parallel port device library (Python bindings)"
 ldesc: "This library is intended to be used by applications that need to

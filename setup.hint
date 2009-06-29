@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libieee1284_3
+requires: libieee1284_3
 sdesc: "Parallel port device library (development)"
 ldesc: "This library is intended to be used by applications that need to
 communicate with (or at least identify) devices that are attached via a
