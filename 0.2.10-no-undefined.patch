@@ -16,7 +16,7 @@
 -src_ieee1284module_la_LIBADD = libieee1284.la
 -src_ieee1284module_la_CFLAGS = -I/usr/include/python$(PYTHON_VERSION) -fpic
 +src_ieee1284module_la_LDFLAGS = -module -avoid-version -no-undefined
-+src_ieee1284module_la_LIBADD = libieee1284.la -L/usr/lib/python$(PYTHON_VERSION)/config -lpython$(PYTHON_VERSION)
++src_ieee1284module_la_LIBADD = libieee1284.la -lpython$(PYTHON_VERSION)
 +src_ieee1284module_la_CFLAGS = -I/usr/include/python$(PYTHON_VERSION)
  endif
  
